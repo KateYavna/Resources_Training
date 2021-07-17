@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btNewGame"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="244dp"
+        android:text="@string/new_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btContinue"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btContinue"
+        app:layout_constraintEnd_toEndOf="@+id/btNewGame"
+        app:layout_constraintStart_toStartOf="@+id/btNewGame"
+        app:layout_constraintTop_toBottomOf="@+id/btNewGame" />
+
+    <Button
+        android:id="@+id/btOptions"
+        style="@style/btOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/options"
+        app:layout_constraintEnd_toEndOf="@+id/btContinue"
+        app:layout_constraintStart_toStartOf="@+id/btContinue"
+        app:layout_constraintTop_toBottomOf="@+id/btContinue" />
+
+    <Button
+        android:id="@+id/btAbout"
+        style="@style/btAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/about"
+        app:layout_constraintEnd_toEndOf="@+id/btOptions"
+        app:layout_constraintStart_toStartOf="@+id/btOptions"
+        app:layout_constraintTop_toBottomOf="@+id/btOptions" />
+</androidx.constraintlayout.widget.ConstraintLayout>

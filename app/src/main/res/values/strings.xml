@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ResourсesTraining</string>
+    <string name="new_game">New Game</string>
+    <string name="btContinue">Continue</string>
+    <string name="options">Options</string>
+    <string name="about">About</string>
+    <string name="kate">Kate</string>
+    <string name="sergei">Sergei</string>
+    <string name="kir">Kir</string>
+    <string name="artem">Artem</string>
+    <string name="vladimir">Vladimir</string>
+    <string name="lessons">We like your lessons Vladimir</string>
+</resources>

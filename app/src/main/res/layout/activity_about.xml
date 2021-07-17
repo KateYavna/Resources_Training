@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Activity">
+
+    <ImageView
+        android:id="@+id/ivAbout"
+        android:layout_width="360dp"
+        android:layout_height="518dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        app:srcCompat="@drawable/kittens_photo" />
+
+    <TextView
+        android:id="@+id/tvKate"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/kate"
+        app:layout_constraintEnd_toEndOf="@+id/ivAbout"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/ivAbout"
+        app:layout_constraintTop_toTopOf="@+id/ivAbout" />
+
+    <TextView
+        android:id="@+id/tvSergei"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/sergei"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKate"
+        app:layout_constraintStart_toEndOf="@+id/tvKate"
+        app:layout_constraintTop_toTopOf="@+id/tvKate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvKir"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/kir"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKate"
+        app:layout_constraintEnd_toStartOf="@+id/tvKate"
+        app:layout_constraintTop_toTopOf="@+id/tvKate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvArtem"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/artem"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSergei"
+        app:layout_constraintStart_toEndOf="@+id/tvSergei"
+        app:layout_constraintTop_toTopOf="@+id/tvSergei" />
+
+    <TextView
+        android:id="@+id/tvLessons"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/lessons"
+        app:layout_constraintEnd_toEndOf="@+id/ivAbout"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/ivAbout"
+        app:layout_constraintTop_toTopOf="@+id/ivAbout" />
+
+    <ImageView
+        android:id="@+id/ivCatWithSpectacles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVladimir"
+        app:srcCompat="@drawable/cat_with_spectacles" />
+
+    <TextView
+        android:id="@+id/tvVladimir"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/vladimir"
+        app:layout_constraintEnd_toEndOf="@+id/ivCatWithSpectacles"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/ivCatWithSpectacles"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
